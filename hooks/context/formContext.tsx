@@ -1,7 +1,7 @@
 import Router from "next/router";
 import React, { createContext, useState } from "react";
 
-export const CustomerContext = createContext();
+export const CustomerContext = createContext(null);
 
 type handleType = {
   name: string;
