@@ -6,7 +6,7 @@ import Header from '../Header'
 import ListText from '../List'
 
 function Posts() {
-  const {name} = useContext(CustomerContext)
+  const {name} = useContext<any>(CustomerContext)
 
   const [data, setdata] = useState()
 
@@ -19,7 +19,7 @@ function Posts() {
     getStaticProps()
 
   }, [name])
-  
+
   return (
     <div>
       <Header userName={name}/>
