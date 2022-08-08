@@ -1,13 +1,10 @@
 import type { NextPage } from 'next'
-import Form from './components/Form'
-import { CustomerContextProvider } from './hooks/context/formContext';
 import React from 'react';
+import FormScreen from './form';
 const Home: NextPage = () => {
 
   return (
-    <CustomerContextProvider>
-      <Form />
-    </CustomerContextProvider>
+      <FormScreen/>
   )
 }
 
